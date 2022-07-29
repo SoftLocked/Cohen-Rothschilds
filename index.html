@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cohen Rothschilds</title>
+
+    <link rel="stylesheet" href="css\mystyles.css">
+
+    <link rel="stylesheet" href="Stylesheets/helpers.css">
+
+    <link rel="stylesheet" href="Stylesheets/styles.css">
+
+
+
+    <script src="https://kit.fontawesome.com/d8eccb7c44.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- full-height landing page -->
+    <section class="hero hero-bg is-fullheight">
+        <!-- navbar container -->
+        <div class="hero-head">
+            <!-- navbar -->
+            <nav class="navbar is-transparent">
+                <div class="navbar-brand">
+                    <a href="index.html" class="navbar-item">
+                        <img src="Assets\Logos\CR\Symbol\White.png" alt="Logo" class="px-3 py-3" style="max-height: 125px;">
+                    </a>
+            
+                    <div id="burger" class="navbar-burger" style="margin-top: 35px;">
+                        <i class="fas fa-bars has-text-white"
+                            style="width: 1.5rem; height: 1.5rem; font-size: 25px; padding:25%"></i>
+                    </div>
+            
+                </div>
+            
+                <div id="nav-links" class="navbar-menu" style="margin-right: 160px;">
+                    <div class="navbar-item navbar-center">
+                        <a href="Practices\Practices.html" class="navbar-item has-text-white mx-2">PRACTICES</a>
+                        <a href="About\About.html" class="navbar-item has-text-white mx-2">ABOUT</a>
+                        <a href="Culture\Culture.html" class="navbar-item has-text-white mx-2">CULTURE</a>
+                        <a href="Contact\Contact.html" class="navbar-item has-text-white mx-2">CONTACT</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- landing page body container -->
+        <div class="hero-body">
+            <!-- landing page body -->
+            <div class="is-overlay center has-text-centered" style="padding: 25px;">
+                <img src="Assets\Logos\CR\Full\White.png" style="max-height: 200px;">
+            </div>
+            <div class="is-overlay center has-text-centered" style="top: 90%;">
+                <a href="#scroll-down-redirect"><h3 class="has-text-white" style="font-size: 1.5em;">SCROLL DOWN</h3></a>
+            </div>
+        </div>
+    </section>
+
+    <a id="scroll-down-redirect"></a>
+    <section class="section has-background-light" style="padding-bottom: 100px;">
+        <h1 class="title has-text-weight-light has-text-black body-change-color mb-4" style="text-align:center; font-size: 3.8rem; margin-top: 20px;">
+            Recent News
+        </h1>
+            <!-- Headline -->
+            <div class="columns is-centered" style="margin-top: 5px;">
+                <div class="column is-6 has-text-black news-hover" style="font-size: 1.5em;">
+                    <p>U.S. Economy Shows Another Decline, Fanning Recession Fears</p>
+                </div>
+            </div>
+            <hr class="is-centered" style="height:1px; color: #000; background-color:#000; border:none; width: 50vw; margin: auto;">
+            <!-- Headline -->
+            <div class="columns is-centered" style="margin-top: 5px;">
+                <div class="column is-6 has-text-black news-hover" style="font-size: 1.5em;">
+                    <p>U.S. Economy Shows Another Decline, Fanning Recession Fears</p>
+                </div>
+            </div>
+            <hr class="is-centered" style="height:1px; color: #000; background-color:#000; border:none; width: 50vw; margin: auto;">
+            <!-- Headline -->
+            <div class="columns is-centered" style="margin-top: 5px;">
+                <div class="column is-6 has-text-black news-hover" style="font-size: 1.5em;">
+                    <p>U.S. Economy Shows Another Decline, Fanning Recession Fears</p>
+                </div>
+            </div>
+            <hr class="is-centered" style="height:1px; color: #000; background-color:#000; border:none; width: 50vw; margin: auto;">
+            <!-- Headline -->
+            <div class="columns is-centered" style="margin-top: 5px;">
+                <div class="column is-6 has-text-black news-hover" style="font-size: 1.5em;">
+                    <p>U.S. Economy Shows Another Decline, Fanning Recession Fears</p>
+                </div>
+            </div>
+            <hr class="is-centered" style="height:1px; color: #000; background-color:#000; border:none; width: 50vw; margin: auto;">
+            <!-- Headline -->
+            <div class="columns is-centered" style="margin-top: 5px;">
+                <div class="column is-6 has-text-black news-hover" style="font-size: 1.5em;">
+                    <p>U.S. Economy Shows Another Decline, Fanning Recession Fears</p>
+                </div>
+            </div>
+            <hr class="is-centered" style="height:1px; color: #000; background-color:#000; border:none; width: 50vw; margin: auto;">
+            <!-- Headline -->
+            <div class="columns is-centered" style="margin-top: 5px;">
+                <div class="column is-6 has-text-black news-hover" style="font-size: 1.5em;">
+                    <p>U.S. Economy Shows Another Decline, Fanning Recession Fears</p>
+                </div>
+            </div>
+            <hr class="is-centered" style="height:1px; color: #000; background-color:#000; border:none; width: 50vw; margin: auto;">
+    </section>
+
+    <!-- footer (dynamically loaded via index.js) -->
+    <footer class="footer main-footer has-background-black has-text-white pb-3"></footer>
+
+</body>
+
+<script>
+    const navbar = document.querySelector('.navbar');
+        const navMenu = document.querySelector('.navbar-menu');
+        const burgerIcon = document.querySelector('#burger');
+        const navbarMenu = document.querySelector('#nav-links');
+        burgerIcon.addEventListener('click', () => {
+            navbarMenu.classList.toggle('is-active');
+            navMenu.classList.toggle('black-bg-toggle');
+            if (navbar.classList.contains('is-transparent')) {
+                navbar.classList.remove('is-transparent');
+                navbar.classList.add('black-bg-toggle');
+            } else if (navbar.classList.contains('black-bg-toggle')) {
+                navbar.classList.remove('black-bg-toggle');
+                navbar.classList.add('is-transparent');
+            }
+        })
+</script>
+<script src="index.js">
+</script>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Niche</title>
+
+    <link rel="stylesheet" href="..\Stylesheets\helpers.css">
+        
+    <link rel="stylesheet" href="..\Stylesheets\styles.css">
+
+    <link rel="stylesheet" href="..\css\mystyles.css">
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/d8eccb7c44.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- full-height landing page -->
+    <section class="hero hero-bg">
+        <!-- navbar container -->
+        <div class="hero-head">
+            <!-- navbar -->
+            <nav class="navbar is-transparent">
+                <div class="navbar-brand">
+                    <a href="..\index.html" class="navbar-item">
+                        <img src="..\Assets\Logos\CR\Symbol\White.png" alt="Logo" class="px-3 py-3"
+                            style="max-height: 125px;">
+                    </a>
+
+                    <div id="burger" class="navbar-burger" style="margin-top: 35px;">
+                        <i class="fas fa-bars has-text-white" style="width: 1.5rem; height: 1.5rem; font-size: 25px; padding:25%"></i>
+                    </div>
+
+                </div>
+
+                <div id="nav-links" class="navbar-menu" style="margin-right: 160px;">
+                    <div class="navbar-item navbar-center">
+                        <a href="..\Practices\Practices.html" class="navbar-item has-text-white mx-2">PRACTICES</a>
+                        <a href="..\About\About.html" class="navbar-item has-text-white mx-2">ABOUT</a>
+                        <a href="..\Culture\Culture.html" class="navbar-item has-text-white mx-2">CULTURE</a>
+                        <a href="..\Contact\Contact.html" class="navbar-item has-text-white mx-2">CONTACT</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- landing page body container -->
+        <div class="hero-body" style="padding:0; padding-bottom: 25px;">
+            <!-- landing page body -->
+            <div class="center has-text-centered">
+                <h1 class="title has-text-weight-light has-text-white"
+                    style="text-align:center; font-size: 3.8rem;">
+                    PRACTICES
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="section has-background-light" style="padding-top: 50px; padding-bottom: 50px;">
+        
+        <div class="columns">
+            
+            <div class="column is-2" style="background-color: rgb(232, 232, 232);">
+                <aside class="menu">
+                    <p class="menu-label">
+                        Practices
+                    </p>
+                    <ul class="menu-list">
+                        <li data-target="capital-markets" class="has-background-light"><a>Capital Markets</a></li>
+                        <li data-target="financial-institutions"><a>Financial Institutions</a></li>
+                        <li data-target="banking"><a>Banking</a></li>
+                        <li data-target="mergers-aquisitions"><a>Mergers & Acquisitions</a></li>
+                        <li data-target="private-equity"><a>Private Equity</a></li>
+                        <li data-target="securities"><a>Securities</a></li>
+                        <li data-target="real-estate"><a>Real Estate</a></li>
+                        <li data-target="construction"><a>Construction</a></li>
+                        <li data-target="technology"><a>Technology</a></li>
+                        <li data-target="healthcare"><a>Healthcare</a></li>
+                        <li data-target="restructuring"><a>Restructuring</a></li>
+                        <li data-target="trusts-estates"><a>Trusts & Estates</a></li>
+                        <li data-target="business-formation"><a>Business Formation</a></li>
+                        <li data-target="civil-litigation"><a>Civil Litigation</a></li>
+                        <li data-target="commercial-litigation"><a>Commercial Litigation</a></li>
+                        <li data-target="construction-litigation"><a>Construction Litigation</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div id="practices-content" class="column is-10 p-6">
+                <!--Capital Markets-->
+                <div id="capital-markets">Capital Markets</div>
+                <!--Financial Institutions-->
+                <div id="financial-institutions" class="is-hidden">Financial Institutions</div>
+                <!--Banking-->
+                <div id="banking" class="is-hidden">Banking</div>
+                <!--Mergers & Acquisition-->
+                <div id="mergers-aquisitions" class="is-hidden">Mergers & Acquisition</div>
+                <!--Private Equity-->
+                <div id="private-equity" class="is-hidden">Private Equity</div>
+                <!--Securities-->
+                <div id="securities" class="is-hidden">Securities</div>
+                <!--Real Estate-->
+                <div id="real-estate" class="is-hidden">Real Estate</div>
+                <!--Construction-->
+                <div id="construction" class="is-hidden">Construction</div>
+
+                <!--Technology-->
+                <div id="technology" class="is-hidden">Technology</div>
+                <!--Healthcare-->
+                <div id="healthcare" class="is-hidden">Healthcare</div>
+                <!--Restructuring-->
+                <div id="restructuring" class="is-hidden">Restructuring</div>
+                <!--Trusts & Estates-->
+                <div id="trusts-estates" class="is-hidden">Trusts & Estates</div>
+                <!--Business Formation-->
+                <div id="business-formation" class="is-hidden">Business Formation</div>
+                <!--Civil Litigation-->
+                <div id="civil-litigation" class="is-hidden">Civil Litigation</div>
+                <!--Commercial Litigation-->
+                <div id="commercial-litigation" class="is-hidden">Commercial Litigation</div>
+                <!--Construction Litigation-->
+                <div id="construction-litigation" class="is-hidden">Construction Litigation</div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- footer (dynamically loaded via index.js) -->
+    <footer class="footer other-page-footer has-background-black has-text-white pb-3"></footer>
+
+</body>
+
+<script>
+    const navbar = document.querySelector('.navbar');
+    const navMenu = document.querySelector('.navbar-menu');
+    const burgerIcon = document.querySelector('#burger');
+    const navbarMenu = document.querySelector('#nav-links');
+    burgerIcon.addEventListener('click', () => {
+        navbarMenu.classList.toggle('is-active');
+        navMenu.classList.toggle('black-bg-toggle');
+        if (navbar.classList.contains('is-transparent')) {
+            navbar.classList.remove('is-transparent');
+            navbar.classList.add('black-bg-toggle');
+        } else if (navbar.classList.contains('black-bg-toggle')) {
+            navbar.classList.remove('black-bg-toggle');
+            navbar.classList.add('is-transparent');
+        }
+    })
+</script>
+<script src="../index.js">
+</script>
+
+</html>

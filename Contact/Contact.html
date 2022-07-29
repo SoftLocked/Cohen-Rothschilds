@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Niche</title>
+
+    <link rel="stylesheet" href="..\css\mystyles.css">
+
+    <link rel="stylesheet" href="..\Stylesheets\helpers.css">
+
+    <link rel="stylesheet" href="..\Stylesheets\styles.css">
+
+
+
+    <script src="https://kit.fontawesome.com/d8eccb7c44.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- full-height landing page -->
+    <section class="hero has-background-black">
+        <!-- navbar container -->
+        <div class="hero-head">
+            <!-- navbar -->
+            <nav class="navbar is-transparent">
+                <div class="navbar-brand">
+                    <a href="..\index.html" class="navbar-item">
+                        <img src="..\Assets\Logos\CR\Symbol\White.png" alt="Logo" class="px-3 py-3"
+                            style="max-height: 125px;">
+                    </a>
+                    <a id="burger" class="navbar-burger">
+                        <i class="fas fa-bars" style="width: 1.5rem; height: 1.5rem; font-size: 25px; padding:25%"></i>
+                    </a>
+                </div>
+
+                <div id="nav-links" class="navbar-menu" style="margin-right: 160px;">
+                    <div class="navbar-item navbar-center">
+                        <a href="..\Practices\Practices.html" class="navbar-item has-text-white mx-4">PRACTICES</a>
+                        <a href="..\About\About.html" class="navbar-item has-text-white mx-4">ABOUT</a>
+                        <a href="..\Culture\Culture.html" class="navbar-item has-text-white mx-4">CULTURE</a>
+                        <a href="..\Contact\Contact.html" class="navbar-item has-text-white mx-4">CONTACT</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+
+    <section class="section has-background-light" style="padding-top: 25px; padding-bottom: 100px;">
+        <h1 class="title has-text-weight-light has-text-black body-change-color mb-6"
+            style="text-align:center; font-size: 3.8rem;">
+            Practices
+        </h1>
+
+    </section>
+
+    <!-- footer (dynamically loaded via index.js) -->
+    <footer class="footer other-page-footer has-background-black has-text-white pb-3"></footer>
+
+</body>
+
+<script>
+    const burgerIcon = document.querySelector('#burger');
+    const navbarMenu = document.querySelector('#nav-links');
+    burgerIcon.addEventListener('click', () => {
+        navbarMenu.classList.toggle('is-active');
+    })
+</script>
+<script src="../index.js">
+</script>
+
+</html>
