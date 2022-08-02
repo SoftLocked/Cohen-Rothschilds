@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Niche</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    <link rel="stylesheet" href="..\Stylesheets\helpers.css">
+
+    <link rel="stylesheet" href="..\Stylesheets\styles.css">
+
+
+
+    <script src="https://kit.fontawesome.com/d8eccb7c44.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- full-height landing page -->
+    <section class="hero hero-bg is-fullheight">
+        <!-- navbar container -->
+        <div class="hero-head">
+            <!-- navbar -->
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <a href="../index.html" class="navbar-item">
+                        <img src="..\Assets\Logos\NicheCloudware\Symbol\Black.png" alt="Logo" class="px-3 py-3"
+                            style="max-height: 100px;">
+                    </a>
+                    <a id="burger" class="navbar-burger">
+                        <i class="fas fa-bars" style="width: 1.5rem; height: 1.5rem; font-size: 25px; padding:25%"></i>
+                    </a>
+                </div>
+
+                <div id="nav-links" class="navbar-menu" style="margin-right: 115px;">
+                    <div class="navbar-item navbar-center">
+                        <a href="..\index.html" class="navbar-item  mx-4">HOME</a>
+                        <div class="navbar-item has-dropdown is-hoverable mx-4">
+                            <a href="..\Services\Services.html" class="navbar-link">SERVICES</a>
+
+                            <div class="navbar-dropdown">
+
+                                <a href="..\Services\Services.html#job-pro-redirect" class="navbar-item">
+                                    Job Pro by Niche Cloudware
+                                </a>
+                                <hr class="dropdown-divider">
+                                <a href="..\Services\Services.html#sap-redirect" class="navbar-item">
+                                    SAP
+                                </a>
+                                <a href="..\Services\Services.html#service-now-redirect" class="navbar-item">
+                                    Service Now
+                                </a>
+                                <a href="..\Services\Services.html#cyber-security-redirect" class="navbar-item">
+                                    Cyber Security
+                                </a>
+                                <a href="..\Services\Services.html#artificial-intelligence-redirect"
+                                    class="navbar-item">
+                                    Artificial Intelligence
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <a href="..\About\about.html" class="navbar-item is-hoverable mx-4">ABOUT</a>
+                        <a href="..\Contact\contact.html" class="navbar-item is-hoverable mx-4 has-text-black">CONTACT
+                            US</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- landing page body container -->
+        <div class="hero-body">
+            <!-- landing page body -->
+            <div class="is-overlay has-text-centered " style="top: 40%">
+                <!-- title -->
+                <h1 class="title mb-6 body-change-color" style="font-size: 3.8rem;">Talk to Us</h1>
+                <!-- subtitle -->
+                <h3 class="subtitle mb-3 has-text-weight-light body-change-color" style="font-size: 2rem;">
+                    Call us at <u>+1.310.237.5924</u>
+                </h3>
+                <h3 class="subtitle mb-3 has-text-weight-light body-change-color" style="font-size: 2rem;">
+                    Or E-mail us at <u>hr@nichecloudware.com</u>
+                </h3>
+            </div>
+    </section>
+
+    <!-- footer (dynamically loaded via index.js) -->
+    <footer class="footer other-page-footer is-primary has-text-white pb-3"></footer>
+
+</body>
+
+<script>
+    const burgerIcon = document.querySelector('#burger');
+    const navbarMenu = document.querySelector('#nav-links');
+    burgerIcon.addEventListener('click', () => {
+        navbarMenu.classList.toggle('is-active');
+    })
+</script>
+<script src="../index.js">
+</script>
+
+</html>
