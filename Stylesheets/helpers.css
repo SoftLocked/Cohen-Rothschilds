@@ -67,25 +67,23 @@
     .tablet {
         display: none;
     }
+    .black-bg-toggle {
+        background-color: #000 !important;
+    }
+        
 }
 
 @media (min-width: 768px) {
     .tablet {
         display: flex;
     }
+    .black-bg-toggle {
+        background-color: none !important;
+    }
+    
 }
 
 .is-transparent {
     background-color: transparent !important;
     border-color: transparent !important;
-}
-
-.is-primary {
-    background-color: #2C62AE !important;
-    border-color: transparent !important;
-
-}
-
-.is-primary-text {
-    color: #2C62AE !important;
 }

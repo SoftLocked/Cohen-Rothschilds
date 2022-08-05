@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Niche</title>
-
-    <link rel="stylesheet" href="..\css\mystyles.css">
+    <title>About - Cohen Rothschilds</title>
 
     <link rel="stylesheet" href="..\Stylesheets\helpers.css">
 
     <link rel="stylesheet" href="..\Stylesheets\styles.css">
+
+    <link rel="stylesheet" href="..\css\mystyles.css">
+
+
 
 
 
@@ -22,7 +24,7 @@
 <body>
 
     <!-- full-height landing page -->
-    <section class="hero has-background-black">
+    <section class="hero hero-bg">
         <!-- navbar container -->
         <div class="hero-head">
             <!-- navbar -->
@@ -32,29 +34,61 @@
                         <img src="..\Assets\Logos\CR\Symbol\White.png" alt="Logo" class="px-3 py-3"
                             style="max-height: 125px;">
                     </a>
-                    <a id="burger" class="navbar-burger">
-                        <i class="fas fa-bars" style="width: 1.5rem; height: 1.5rem; font-size: 25px; padding:25%"></i>
-                    </a>
+
+                    <div id="burger" class="navbar-burger" style="margin-top: 35px;">
+                        <i class="fas fa-bars has-text-white"
+                            style="width: 1.5rem; height: 1.5rem; font-size: 25px; padding:25%"></i>
+                    </div>
+
                 </div>
 
                 <div id="nav-links" class="navbar-menu" style="margin-right: 160px;">
                     <div class="navbar-item navbar-center">
-                        <a href="..\Practices\Practices.html" class="navbar-item has-text-white mx-4">PRACTICES</a>
-                        <a href="..\About\About.html" class="navbar-item has-text-white mx-4">ABOUT</a>
-                        <a href="..\Culture\Culture.html" class="navbar-item has-text-white mx-4">CULTURE</a>
-                        <a href="..\Contact\Contact.html" class="navbar-item has-text-white mx-4">CONTACT</a>
+                        <a href="..\Practices\Practices.html" class="navbar-item has-text-white mx-2">PRACTICES</a>
+                        <a href="..\About\About.html" class="navbar-item has-text-white mx-2">ABOUT</a>
+                        <a href="..\Culture\Culture.html" class="navbar-item has-text-white mx-2">CULTURE</a>
                     </div>
                 </div>
             </nav>
         </div>
+        <!-- landing page body container -->
+        <div class="hero-body" style="padding:0; padding-bottom: 25px;">
+            <!-- landing page body -->
+            <div class="center has-text-centered">
+                <h1 class="title has-text-weight-light has-text-white" style="text-align:center; font-size: 3.8rem;">
+                    ABOUT
+                </h1>
+            </div>
+        </div>
     </section>
 
-    <section class="section has-background-light" style="padding-top: 25px; padding-bottom: 100px;">
-        <h1 class="title has-text-weight-light has-text-black body-change-color mb-6"
-            style="text-align:center; font-size: 3.8rem;">
-            ABOUT
-        </h1>
+    <section class="" style="height: 10vh;">
+    
+    </section>
 
+    <section class="section has-background-light" style="padding: 15vw; padding-left: 25vw; background: white url(../Assets/Backgrounds/About/LawFirm.jpg) center / cover;">
+        <div class="p-4" style="background-color: rgba(0,0,0,0.7); width: 50vw;">
+            <h1 class="title" style="color: white; font-size: 3em; text-align: center;">Professional Boutique Law Firm</h1>
+        </div>
+
+    </section>
+
+    <section class="section has-background-light" style="padding: 15vw; padding-left: 25vw; background: white url(../Assets/Backgrounds/About/Leadership.jpg) center / cover;">
+        <div class="p-4" style="background-color: rgba(0,0,0,0.7); width: 45vw;">
+            <h1 class="title" style="color: white; font-size: 3em; text-align: center;">Thoughtful Leadership</h1>
+        </div>
+    </section>
+
+    <section class="section has-background-light" style="padding: 15vw; padding-left: 25vw; background: white url(../Assets/Backgrounds/About/Exceptional.jpg) center / cover;">
+        <div class="p-4" style="background-color: rgba(0,0,0,0.7); width: 45vw;">
+            <h1 class="title" style="color: white; font-size: 3em; text-align: center;">Exceptional Individuals</h1>
+        </div>
+    </section>
+
+    <section class="section has-background-light" style="padding: 15vw; padding-left: 25vw; background: white url(../Assets/Backgrounds/About/Leadership.jpg) center / cover;">
+        <div class="p-4" style="background-color: rgba(0,0,0,0.7); width: 45vw;">
+            <h1 class="title" style="color: white; font-size: 3em; text-align: center;">Commitment to Excellence</h1>
+        </div>
     </section>
 
     <!-- footer (dynamically loaded via index.js) -->
@@ -63,10 +97,20 @@
 </body>
 
 <script>
+    const navbar = document.querySelector('.navbar');
+    const navMenu = document.querySelector('.navbar-menu');
     const burgerIcon = document.querySelector('#burger');
     const navbarMenu = document.querySelector('#nav-links');
     burgerIcon.addEventListener('click', () => {
         navbarMenu.classList.toggle('is-active');
+        navMenu.classList.toggle('black-bg-toggle');
+        if (navbar.classList.contains('is-transparent')) {
+            navbar.classList.remove('is-transparent');
+            navbar.classList.add('black-bg-toggle');
+        } else if (navbar.classList.contains('black-bg-toggle')) {
+            navbar.classList.remove('black-bg-toggle');
+            navbar.classList.add('is-transparent');
+        }
     })
 </script>
 <script src="../index.js">
