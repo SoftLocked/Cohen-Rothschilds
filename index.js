@@ -39,22 +39,6 @@ tabs.forEach((tab) => {
 });
 
 /****************************************************************************************************
-* Culture Word Cycle
-****************************************************************************************************/
-
-const culturalValues = document.querySelector('#cultural-values');
-
-let values = ['COLLABORATIVE', 'INCLUSIVE', 'CLIENT-CENTRIC', 'LASER-FOCUSED'];
-
-let cultureIter = 1;
-
-setInterval(function () {
-    culturalValues.innerHTML = values[cultureIter%4];
-    cultureIter++;
-}, 1500);
-
-
-/****************************************************************************************************
 * Dynamic Footer
 ****************************************************************************************************/
 

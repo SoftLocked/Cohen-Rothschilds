@@ -2,6 +2,14 @@
     background: white url(../Assets/Backgrounds/LandingPage.png) center / cover !important;
 }
 
+.sports-bg {
+    background: white url(../Assets/Backgrounds/Practices/Sports.png) center / cover !important;
+}
+
+.health-bg {
+    background: white url(../Assets/Backgrounds/Practices/Health.png) center / cover !important;
+}
+
 @media (max-width: 1024px) {
 
 }

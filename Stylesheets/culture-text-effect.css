@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.typewrite-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cultural-values {
+
+    font-weight: bold;
+    font-family: "Anonymous Pro", monospace;
+    border-right: 2px solid rgba(0,0,0,0);
+
+    animation: typewriter 2s steps(30) normal, blinkTextCursor 0.5s infinite;
+
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 379px;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {border-right-color: rgba(0, 0, 0, .8);}
+    to {border-right-color: rgba(0, 0, 0, 0);}
+}
